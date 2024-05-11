@@ -6,5 +6,5 @@ test-runner-shell: test-runner
 	docker run -it --rm -v $(CURDIR):$(DOCKER_DIR) -w $(DOCKER_DIR) test-runner
 
 RUN_TEST=docker run -v $(CURDIR):$(DOCKER_DIR) -w $(DOCKER_DIR) --entrypoint cram test-runner
-run-tests-%:
+%-tests:
 	$(RUN_TEST) $*
