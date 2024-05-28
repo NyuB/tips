@@ -16,3 +16,8 @@ grep can be used to filter lines based on a pattern
   #2
   #3
   #4
+
+Multiple pattern can be provided using the '\|' conjonction operator
+  $ cat resources/lines.txt | grep "1\|3"
+  #1
+  #3
