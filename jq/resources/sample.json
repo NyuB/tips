@@ -1,0 +1,16 @@
+{
+    "int_key": 42,
+    "string_key": "Bob",
+    "boolean_key": true,
+    "int_array_key": [
+        1,2,3,4
+    ],
+    "object_key": {
+        "a": "b"
+    },
+    "object_array_key": [
+        { "name": "Bob", "age": 24 },
+        { "name": "Alice", "age": 53 },
+        { "name": "Eleanor", "age": 36 }
+    ]
+}
