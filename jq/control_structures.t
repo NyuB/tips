@@ -13,3 +13,12 @@ try <expression> catch <fallback>
   [5]
   $ echo ${OOPS_JSON} | jq "try (${DIVIDE_BY_NESTED}) catch 0"
   0
+
+Note that an 'if <expr> == null then <expr> else <default> end' construct can be shortened with the alternative operator '//'
+  $ NAME_OR_DEFAULT='.name // "John Smith"'
+  $ echo '{ "name": "Alice" }' | jq "${NAME_OR_DEFAULT}"
+  "Alice"
+  $ echo '{ "name": null }' | jq "${NAME_OR_DEFAULT}"
+  "John Smith"
+  $ echo '{ }' | jq "${NAME_OR_DEFAULT}"
+  "John Smith"
