@@ -1,0 +1,4 @@
+# Cram failed tests artifacts
+*.t.err
+*.t.orig
+*.t.rej
