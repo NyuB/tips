@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+        name = Brice Decaestecker
+        email = brice.decaestecker@gmx.fr
+[core]
+        autocrlf = input
+        editor = vim
+[alias]
+        amend = commit --amend
+        append = commit --amend --no-edit
+        chmodx = update-index --chmod=+x
+        cm = commit -m
+        go = checkout
+        logf = log --name-status
+        mkb = checkout -b
+        pushfl = push --force-with-lease
+        rmb = branch -D
+        st = status
+        sub = restore --staged
+        what = diff-tree --no-commit-id --name-only -r --root
+[push]
+        autoSetupRemote = true
+[pull]
+        rebase = true
+[init]
+        defaultBranch = main
