@@ -21,3 +21,4 @@ jobs:
         make git-tests
         make java-tests
         make jq-tests
+        make make-tests
