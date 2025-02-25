@@ -11,7 +11,7 @@ A file can be passed as argument
 
 Passing a directory with -R searches all files within this directory recursively
 (-l flags prints only matching files' names)
-  $ grep -l -R 1 resources
+  $ grep -l -R 1 resources | sort
   resources/lines.txt
   resources/nested/lines.txt
 
