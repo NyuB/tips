@@ -23,3 +23,12 @@ A 'clean' target is often defined to reset all built artifacts
   $ cat a
   cat: a: No such file or directory
   [1]
+By default, make looks for a 'Makefile' file in the current directory.
+Another directory can be specified with '-C'. This can be usefull when calling other Makefile from within a make target recipe.
+  $ mkdir nested
+  $ printf "target:\n\t@echo nested" > nested/Makefile
+  $ ls nested
+  Makefile
+  $ make -C nested | sed -n s+${PWD}+.+p
+  make: Entering directory './nested'
+  make: Leaving directory './nested'
