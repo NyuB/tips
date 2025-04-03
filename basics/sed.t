@@ -16,6 +16,9 @@ Replace a pattern from a given file
   O2
   O3
   O4
+Eventhough '/' is idiomatically used as a separator, any separator can be used, e.g. to substitute paths
+  $ echo ${PWD}/resources | sed -n s+${PWD}+current_directory+p
+  current_directory/resources
 Modifiy the file 'in place' with -i/--in-place
   $ sed --in-place=.bkp 's/#/O/g' resources/lines.txt
   $ cat resources/lines.txt
