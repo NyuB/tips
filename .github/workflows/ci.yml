@@ -18,7 +18,9 @@ jobs:
     - name: Tests
       run: |
         make basics-tests
+        make cmake-tests
         make git-tests
         make java-tests
         make jq-tests
         make make-tests
+ 

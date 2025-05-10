@@ -13,5 +13,7 @@ RUN apt-get update && apt-get install -y jq && apt-get clean
 
 # Install xclip
 RUN apt-get update && apt-get install -y xclip && apt-get clean
+# Install cmake
+RUN apt-get update && apt-get install -y cmake && apt-get clean
 
 ENTRYPOINT /bin/bash

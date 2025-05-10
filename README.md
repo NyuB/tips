@@ -5,6 +5,7 @@ An heterogeneous list of command line tools 'cheatsheet' and snippets using cram
 ## By tool/technology
 
 (sorted alphabetically)
+- [cmake](cmake)
 - [git](git)
 - [java](java)
 - [jq](jq)
@@ -22,6 +23,7 @@ An heterogeneous list of command line tools 'cheatsheet' and snippets using cram
 - structured data manipulation
   + [jq](jq)
 - build tools
+  + [cmake](cmake)
   + [make](make/run.t)
 - misc Shell QOL
   + [stdout to copy/paste buffer](basics/xclip.t)
