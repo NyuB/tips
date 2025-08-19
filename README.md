@@ -23,6 +23,8 @@ An heterogeneous list of command line tools 'cheatsheet' and snippets using cram
   + [jq](jq)
 - build tools
   + [make](make/run.t)
+- misc Shell QOL
+  + [stdout to copy/paste buffer](basics/xclip.t)
 
 # Contributing
 
