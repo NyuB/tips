@@ -11,4 +11,7 @@ RUN curl -s "https://get.sdkman.io" | bash && source "/root/.sdkman/bin/sdkman-i
 # Install jq
 RUN apt-get update && apt-get install -y jq && apt-get clean
 
+# Install xclip
+RUN apt-get update && apt-get install -y xclip && apt-get clean
+
 ENTRYPOINT /bin/bash
