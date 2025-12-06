@@ -26,7 +26,7 @@ An heterogeneous list of command line tools 'cheatsheet' and snippets using cram
   + [cmake](cmake)
   + [make](make/run.t)
 - misc Shell QOL
-  + [stdout to copy/paste buffer](basics/xclip.t)
+  + [stdout to copy/paste buffer](no-ci/xclip.t)
 
 # Contributing
 
