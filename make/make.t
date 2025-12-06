@@ -33,5 +33,5 @@ Another directory can be specified with '-C'. This can be usefull when calling o
   make: Entering directory './nested'
   make: Leaving directory './nested'
 The Makefile can also be specified with -f
-  $ make -f Globbing.mk 
-  globs/b.globtarget globs/a.globtarget
+  $ make -f Globbing.mk | sort
+  globs/a.globtarget globs/b.globtarget
